@@ -1,3 +1,5 @@
+import { ADDTASK } from "./types";
+
 const initState = {
     todos: [
       {
@@ -15,7 +17,15 @@ const initState = {
 
   function todoReducers(state=initState,action){
 
-    return state;
+  switch (action.type) {
+      case ADDTASK:
+        {}
+          
+   
+  
+      default:
+          break;
+  }
 
 
   }

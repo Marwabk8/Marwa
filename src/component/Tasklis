@@ -1,0 +1,15 @@
+
+import { useSelector } from 'react-redux';
+import Task from './Task';
+ 
+function Tasklis() {
+    const todos = useSelector((state) => state.todoReducers.todos);
+
+    return (
+        <div>
+         {todos.map((el=> <Task key={el.id} el={el}/>))}   
+        </div>
+    )
+}
+
+export default Tasklis;
