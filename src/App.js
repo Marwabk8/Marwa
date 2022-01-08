@@ -1,16 +1,17 @@
 
 import './App.css';
 import Addtask from './component/Addtask';
+import TaskList from './component/TaskList.js';
 
-import Tasklis from './component/Tasklis';
+
 
 
 function App() {
   return (
     <div className="App">
-    <Addtask>Addtask</Addtask>
+    <Addtask />
     <br/>
-    <Tasklis/>
+    <TaskList/>
    
     </div>
   );
